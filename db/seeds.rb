@@ -118,9 +118,9 @@ puts "🐕 Seeding data..."
     longitude: lat_lng[1]
   )
 
-  # Create 3-7 random reviews for each dog house
+  # Create 3-10 random reviews for each dog house
   # Uses Faker for fake data https://github.com/faker-ruby/faker
-  rand(3..7).times do
+  rand(3..10).times do
     Review.create(
       dog_house_id: dog_house.id,
       username: Faker::Internet.username,
